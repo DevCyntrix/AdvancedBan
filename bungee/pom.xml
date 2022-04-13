@@ -85,13 +85,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bungeecord</artifactId>
-            <version>3.0.0</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
             <groupId>me.leoko.advancedban</groupId>
             <artifactId>AdvancedBan-Core</artifactId>
             <version>${project.version}</version>
