@@ -38,7 +38,7 @@ import java.util.function.BiFunction;
 public class BukkitMethods implements MethodInterface {
 
     private final File messageFile = new File(getDataFolder(), "Messages.yml");
-    private final File layoutFile = new File(getDataFolder(), "Layouts.yml");
+    private final File layoutFile = new File(getDataFolder(), "layouts.yml");
     private final File mysqlFile = new File(getDataFolder(), "MySQL.yml");
     private YamlConfiguration config;
     private File configFile = new File(getDataFolder(), "config.yml");
@@ -61,10 +61,10 @@ public class BukkitMethods implements MethodInterface {
             getPlugin().saveResource("config.yml", true);
         }
         if (!messageFile.exists()) {
-            getPlugin().saveResource("Messages.yml", true);
+            getPlugin().saveResource("messages.yml", true);
         }
         if (!layoutFile.exists()) {
-            getPlugin().saveResource("Layouts.yml", true);
+            getPlugin().saveResource("layouts.yml", true);
         }
 
         try {

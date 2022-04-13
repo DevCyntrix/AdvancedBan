@@ -7,13 +7,11 @@
 # If set to false all bans will be saved locally in a HSQLDB-Database
 UseMySQL: false
 
-MySQL:
-  IP: localhost
-  DB-Name: database-name
-  Username: admin
-  Password: superSecret
-  Port: 3306
-  Properties: 'verifyServerCertificate=false&useSSL=false&useUnicode=true&characterEncoding=utf8'
+jdbc:
+  url: 'jdbc:mysql://localhost:3306/database-name?verifyServerCertificate=false&useSSL=false&useUnicode=true&characterEncoding=utf8'
+  username: admin
+  password: superSecret
+
 
 # Set to false if you want to have only short messages in the console
 # On startup and on the shutdown.

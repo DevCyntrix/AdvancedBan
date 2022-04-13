@@ -44,7 +44,7 @@ public class BungeeMethods implements MethodInterface {
 
     private final File configFile = new File(getDataFolder(), "config.yml");
     private final File messageFile = new File(getDataFolder(), "Messages.yml");
-    private final File layoutFile = new File(getDataFolder(), "Layouts.yml");
+    private final File layoutFile = new File(getDataFolder(), "layouts.yml");
     private final File mysqlFile = new File(getDataFolder(), "MySQL.yml");
     private Configuration config;
     private Configuration messages;
@@ -80,10 +80,10 @@ public class BungeeMethods implements MethodInterface {
                 Files.copy(getPlugin().getResourceAsStream("config.yml"), configFile.toPath());
             }
             if (!messageFile.exists()) {
-                Files.copy(getPlugin().getResourceAsStream("Messages.yml"), messageFile.toPath());
+                Files.copy(getPlugin().getResourceAsStream("messages.yml"), messageFile.toPath());
             }
             if (!layoutFile.exists()) {
-                Files.copy(getPlugin().getResourceAsStream("Layouts.yml"), layoutFile.toPath());
+                Files.copy(getPlugin().getResourceAsStream("layouts.yml"), layoutFile.toPath());
             }
 
             config = ConfigurationProvider.getProvider(YamlConfiguration.class).load(configFile);
