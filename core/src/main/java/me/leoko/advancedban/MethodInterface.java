@@ -63,11 +63,6 @@ public interface MethodInterface {
      */
     Object getLayouts();
 
-    /**
-     * Set up metrics.
-     */
-    void setupMetrics();
-
     boolean isBungee();
 
     String clearFormatting(String text);

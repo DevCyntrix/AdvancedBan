@@ -11,7 +11,6 @@ import me.leoko.advancedban.bungee.event.RevokePunishmentEvent;
 import me.leoko.advancedban.bungee.listener.CommandReceiverBungee;
 import me.leoko.advancedban.bungee.utils.CloudNetCloudPermsOfflineUser;
 import me.leoko.advancedban.bungee.utils.LuckPermsOfflineUser;
-import me.leoko.advancedban.manager.DatabaseManager;
 import me.leoko.advancedban.manager.PunishmentManager;
 import me.leoko.advancedban.manager.UUIDManager;
 import me.leoko.advancedban.utils.Permissionable;
@@ -26,7 +25,6 @@ import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
-import org.bstats.bungeecord.Metrics;
 
 import java.io.File;
 import java.io.IOException;
@@ -148,10 +146,6 @@ public class BungeeMethods implements MethodInterface {
     @Override
     public Configuration getLayouts() {
         return layouts;
-    }
-
-    @Override
-    public void setupMetrics() {
     }
 
     @Override
